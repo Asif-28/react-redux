@@ -1,0 +1,33 @@
+.form {
+  height: 100vh;
+
+  background-color: violet;
+  //   background: linear-gradient(
+  //     to top,
+  //     rgba(255, 255, 255, 0.4) 0,
+  //     rgba(255, 255, 255, 0) 60%,
+  //     rgba(255, 255, 255, 0.4) 60%
+  //   );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  input {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4rem;
+    margin: 5px;
+    font-size: 1.2rem;
+    border-radius: 4px 14px 4px 14px;
+    border: none;
+  }
+  button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1.5rem;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    margin: 0px auto;
+  }
+}
