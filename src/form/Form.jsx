@@ -8,6 +8,7 @@ import "./Form.scss";
 
 const Form = () => {
   const inputRef = useRef();
+  const numRef = useRef();
   const emailRef = useRef();
   const dispatch = useDispatch();
   //   THE HOOK USE DISPATCH IS USED TO DISPATCH PAYLOAD ACTION TO THE STATE IT ACCEPTS THE
@@ -28,8 +29,10 @@ const Form = () => {
       {!isLoggedIn ? (
         <div className="form">
           <form onSubmit={(e) => handleSubmit(e)}>
+            {/* OnSubmit IS USED TO SUBMIT THE FORM WHEN THE SUBMIT TYPE BUTTON IS CLICKED */}
             <input ref={inputRef} type="text" required placeholder="Name" />
             <input ref={emailRef} type="email" required placeholder="Email" />
+            <input ref={numRef} type="number" required placeholder="number" />
             <input type="password" required placeholder="Password" />
             {/* <button onClick={(e) => handleSubmit(e)}>Submit</button> */}
             <button type="submit">Submit</button>
