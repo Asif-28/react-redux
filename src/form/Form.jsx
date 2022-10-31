@@ -21,7 +21,11 @@ const Form = () => {
     setIsLoggedIn(true);
     // console.log(inputRef.current.value);
     dispatch(
-      login({ name: inputRef.current.value, email: emailRef.current.value })
+      login({
+        name: inputRef.current.value,
+        email: emailRef.current.value,
+        number: numRef.current.value,
+      })
     );
   };
   return (
