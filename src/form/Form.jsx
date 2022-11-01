@@ -37,6 +37,9 @@ const Form = () => {
             <input ref={inputRef} type="text" required placeholder="Name" />
             <input ref={emailRef} type="email" required placeholder="Email" />
             <input ref={numRef} type="number" required placeholder="number" />
+            <input type="text" required placeholder="description" />
+            <input type="text" required placeholder="" />
+
             <input type="password" required placeholder="Password" />
             {/* <button onClick={(e) => handleSubmit(e)}>Submit</button> */}
             <button type="submit">Submit</button>
